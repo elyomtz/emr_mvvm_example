@@ -9,7 +9,7 @@ class QuoteRepository {
 
     suspend fun getAllQuotes():List<QuoteModel>{
         val response = api.getQuotes()
-        QuoteProvider
+        QuoteProvider.quotes = response
         return response
     }
 }
