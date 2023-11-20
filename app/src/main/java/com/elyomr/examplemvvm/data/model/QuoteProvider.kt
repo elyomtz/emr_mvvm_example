@@ -1,10 +1,10 @@
 package com.elyomr.examplemvvm.data.model
 
-class QuoteProvider {
-    companion object {
+import javax.inject.Inject
+import javax.inject.Singleton
 
-     var quotes:List<QuoteModel> = emptyList()
+@Singleton
+class QuoteProvider @Inject constructor(){
+   var quotes:List<QuoteModel> = emptyList()
 
-
-    }
 }
